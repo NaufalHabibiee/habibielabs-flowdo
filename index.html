@@ -36,22 +36,15 @@
     color: var(--ink);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
   }
 
   .window {
     width: 100%;
-    max-width: 1180px;
+    min-height: 100vh;
     background: var(--card);
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(30,43,39,0.16);
     overflow: hidden;
     display: grid;
     grid-template-columns: 270px 1fr;
-    min-height: 660px;
   }
 
   /* TITLE BAR */
@@ -60,18 +53,10 @@
     height: 52px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 28px;
     border-bottom: 1px solid var(--line);
-    position: relative;
   }
-  .traffic { display: flex; gap: 8px; }
-  .traffic span { width: 13px; height: 13px; border-radius: 50%; }
-  .traffic .r { background: #ec6a5e; }
-  .traffic .y { background: #f4bf4f; }
-  .traffic .g { background: #61c554; }
   .titlebar h2 {
-    position: absolute;
-    left: 50%; transform: translateX(-50%);
     font-size: 15px;
     font-weight: 600;
     color: var(--ink-soft);
@@ -303,7 +288,6 @@
 <body>
 <div class="window">
   <div class="titlebar">
-    <div class="traffic"><span class="r"></span><span class="y"></span><span class="g"></span></div>
     <h2>Flowdo <em>— focus &amp; tasks</em></h2>
   </div>
 
